@@ -1,13 +1,473 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>CseneNais Weboldal</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#home">CseneNails</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="galleria.html">Galléria</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#about">Rólam</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#portfolio">Portfoliom</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#contact">Kontakt</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+</nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span >📍 Érd Körmös Szalon</span><br>
+                <span class="down">Szinnyai Csenge</span>
+            </h1>
+            <p class="header-subtitle">
+                <span id="typed"></span>
+            </p>            
+    <br><br><br><br><br><br>
+    <div class="col-sm-12 mt-3">
+        <div class="col-sm-6 mt-3">
+            <button class="btn btn-primary"><a href="galleria.html" style="color: aliceblue; border-color: gold;">Saját Munkáim</a></button>
+        </div>
+        <div class="col-sm-6 mt-3">
+            <button class="btn btn-primary"><a href="https://nincs-kft.reservio.com" style="color: rgb(0, 0, 0);">Foglalás Most</a></button>
+        </div>
+    </div>
+
+           
+
+        </div>              
+    </header><!-- end of page header -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/man.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Ki vagyok?</p>
+                    <h2 class="section-title mb-3">Rövid Bemutatkozó</h2>
+                    <p>
+                        Sziasztok! Szinnyai Csenge vagyok, okleveles körmös, és három éve hobbi szinten foglalkozom körömápolással és díszítéssel <br> A körmök világa mindig is lenyűgözött, ezért döntöttem úgy, hogy a szenvedélyemet hivatássá alakítom. Nagyon szeretek fejlődni és új dolgokat tanulni, így mindig keresem az új trendeket és technikákat, hogy még jobbá válhassak a szakmámban. Számomra a legfontosabb, hogy minden vendégem elégedetten távozzon, és a körmei ne csak szép, hanem egészségesek is legyenek!         
+                    </p>
+                    <br><br>
+            
+                    <div class="reservio-button-container"
+                    data-text="Foglalás Online"
+                    data-size="large"
+                    data-color="#D91881"
+                    data-url="https://nincs-kft.reservio.com">
+               </div>
+               <script src="https://cdn.reservio.com/widget/button-bundle.js"></script>
+
+
+
+                    
+
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">Miket csinálok ?</p>
+            <h6 class="section-title mb-6">Szolgáltatásaim</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/mukorom.png"Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Műköröm építés</h6>
+                            <p class="subtitle">A köröm hosszabbítása és formázása műanyag alapú anyagokkal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/mukorom.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Gél lakkozás</h6>
+                            <p class="subtitle">Tartós körömlakk, amely UV fény hatására keményedik meg.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/mukorom.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Körömápolás és manikűr</h6>
+                            <p class="subtitle"> A körmök tisztítása, formázása és hidratálása.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/mukorom.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Körömdíszítés </h6>
+                            <p class="subtitle">Különféle minták, strasszok vagy festések alkalmazása a körmökön.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">Milyen Körmöket Csinálok ?</p>
+            <h6 class="section-title mb-6">Portfolióm</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="" class="portfolio-card">
+                        <img src="assets/imgs/korom1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Beépitett Francia Csomag</h5>
+                                <p class="font-weight-normal">Ár:7000 <br> Dátum : 2025.01.03</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Image (1).jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>L-es Méret diszitett köröm</h5>
+                                <p class="font-weight-normal">Ár: 6800 Ft <br>Dátum : 2025.01.18</p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/Image (2).jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>S-M Épiett Köröm</h5>
+                                <p class="font-weight-normal">Ár: 5500 ft Dátum : 2024.12.22</p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">Mennyit kérek?</p>
+            <h6 class="section-title mb-6">Árlistám</h6>
+            <!-- row -->
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Basic Körmök</h6>
+                        <div class="pricing-card-list">
+                            <p></p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                            <p>Manikűr</p>
+                            <p>Pedikűr</p>
+                            <p>Gél lakkozás</p>
+                            <p>Paraffinos kézápolás</p>
+                            <p>Köröm erősítés</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>HUF</span>
+                        <br>
+                        <span>6000-7500</span>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/mdeiumcsomg.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Médium Körmök</h6>
+                        <div class="pricing-card-list">
+                            <p>Spa manikűr prémium csomag</p>
+                            <p>Körömfrancia prémium csomag</p>
+                            <p>Francia manikűr</p>
+                            <p>S-M, M méretű körmök</p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>HUF</span><br>
+                        <span>7500-8000</span>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Prémium Körmök</h6>
+                        <div class="pricing-card-list">
+                            <p>Spa manikűr prémium csomag</p>
+                            <p>Körömfrancia prémium csomag</p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>HUF</span><br>
+                        <span>7500-8000</span>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Egyedi Köröm</h6>
+                        <div class="pricing-card-list">
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span></span>
+                        <span>Megbeszélés Alapján</span>
+                    </div>
+                    <a href="index.html#contact" class="btn btn-primary mt-3 pricing-card-btn">Felveszem A kapcsolatot</a>
+                </div>
+
+            </div><!-- end of pricing wrapper -->
+        </div> <!-- end of container -->
+    </section><!-- end of pricing section -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Szeretnél végre egy új körmöt?</h6>
+                    <p class="m-0 text-light">Ha igen, várlak Szalonomban</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded"><a href="https://nincs-kft.reservio.com" style="color: black;">Foglalok Időpontot</a></button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+    <section class="section" id="testimonials">
+        <div class="container text-center">
+            <h6 class="section-title mb-6">VisszaJelzések</h6>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Nagy Málna</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Kiss alma</h6>
+                        </div>
+                    </div>
+                </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-img-holder">
+                        <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
+                    </div>
+                    <div class="testimonial-card-body">
+                        <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                        <h6 class="testimonial-card-title">Kiss Hanna</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    <!-- contact section -->                  ...
+                        <!-- contact section -->
+                        <section class="section" id="contact">
+                            <div class="container text-center">
+                                <p class="section-subtitle">How can you communicate?</p>
+                                <h6 class="section-title mb-5">Contact Me</h6>
+                                <!-- contact form -->
+                                <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                                    <div class="form-row">
+                                        <a href=""></a>
+                                        <div class="form-group col-sm-6 mt-3">
+                                            <a href="tel:+36203261819" class="btn btn-outline-primary rounded">CseneNails Hivás</a>
+                                        </div>
+                                        <br>
+                                        <div class="form-group col-sm-6 mt-3">
+                                            <a href="mailto:szinnyaicsenge@gmail.com" class="btn btn-outline-primary rounded">Email Küldése</a>
+                                        </div>
+                                    </div>
+                                </form><!-- end of contact form -->
+                            </div><!-- end of container -->
+                        </section><!-- end of contact section -->
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright Held By MomdWeb <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed('#typed', {
+            strings: ["CseneNails Tulajdonos", "Körmös","Körömépítő","Körömdíszítő","Körömápoló"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    });
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    });
+</script>
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+</body>
 </html>
