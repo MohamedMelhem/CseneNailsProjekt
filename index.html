@@ -1,9 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
@@ -14,10 +11,12 @@
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
+    <body style="overflow-x: hidden;">
+      
     <!-- Page Navbar -->
 <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
@@ -27,7 +26,7 @@
                     <a class="link" href="index.html">Home</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="galleria.html">Galéria</a>
+                    <a class="link" href="galleria.html">Galléria</a>
                 </li>
                 <li class="item">
                     <a class="link" href="index.html#about">Rólam</a>
@@ -59,19 +58,14 @@
                 <span id="typed"></span>
             </p>            
     <br><br><br><br><br><br>
-    <button class="btn btn-lg my-font btn-light rounded" style="padding: 20px 40px; font-size: 1.5rem;">
-      <a href="https://nincs-kft.reservio.com" style="color: black;">Foglalok Időpontot</a>
-  </button>
-    <div class="row mt-3">
-      <div class="col-6 col-sm-6 mt-3">
-        <button class="btn btn-primary" style="width: 100%; padding: 20px; font-size: 1.5rem;">
-          <a href="galleria.html" style="color: aliceblue; border-color: gold;">Saját Munkáim</a>
-      </button>
-      </div>
-
-  </div>
+<div class="row mt-3">
+    <div class="col-6 d-flex justify-content-center">
+        <a href="galleria.html" class="btn btn-primary" style="color: aliceblue; border-color: gold;">Saját Munkáim</a>
     </div>
-  </div>
+    <div class="col-6 d-flex justify-content-center">
+        <a href="https://nincs-kft.reservio.com" class="btn btn-primary" style="color: rgb(0, 0, 0);">Foglalás Most</a>
+    </div>
+</div>
 
            
 
@@ -82,29 +76,23 @@
         <div class="container text-center">
             <!-- about wrapper -->
             <div class="about">
-              <h2 class="section-title mb-3">Rövid Bemutatkozó</h2>
                 <div class="about-img-holder">
                     <img src="assets/imgs/man.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Ki vagyok?</p>
-
+                    <h2 class="section-title mb-3">Rövid Bemutatkozó</h2>
                     <p>
                         Sziasztok! Szinnyai Csenge vagyok, okleveles körmös, és három éve hobbi szinten foglalkozom körömápolással és díszítéssel <br> A körmök világa mindig is lenyűgözött, ezért döntöttem úgy, hogy a szenvedélyemet hivatássá alakítom. Nagyon szeretek fejlődni és új dolgokat tanulni, így mindig keresem az új trendeket és technikákat, hogy még jobbá válhassak a szakmámban. Számomra a legfontosabb, hogy minden vendégem elégedetten távozzon, és a körmei ne csak szép, hanem egészségesek is legyenek!         
                     </p>
                     <br><br>
-                    <div class="row justify-content-center">
-                      <div class="col-12 col-md-6 d-flex justify-content-center">
-                          <div class="reservio-button-container"
-                              data-text="Foglalás Online"
-                              data-size="large"
-                              data-color="#D91881"
-                              data-url="https://nincs-kft.reservio.com">
-                          </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
+            
+                    <div class="reservio-button-container"
+                    data-text="Foglalás Online"
+                    data-size="large"
+                    data-color="#D91881"
+                    data-url="https://nincs-kft.reservio.com">
+               </div>
                <script src="https://cdn.reservio.com/widget/button-bundle.js"></script>
 
 
@@ -170,7 +158,7 @@
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
-                    <a href="index.html#section" class="portfolio-card">
+                    <a href="" class="portfolio-card">
                         <img src="assets/imgs/korom1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -181,7 +169,7 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="index.html#section" class="portfolio-card">
+                    <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/Image (1).jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -192,7 +180,7 @@
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <a href="index.html#section" class="portfolio-card">
+                    <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/Image (2).jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
@@ -314,9 +302,9 @@
     <section class="section" id="testimonials">
         <div class="container text-center">
             <h6 class="section-title mb-6">VisszaJelzések</h6>
-        <div class="swiper-containedddddr">
-            <div class="swiper-wrappdder">
-                <div class="swiper-sliddde">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
                             <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Testimonial Image">                        
@@ -425,33 +413,23 @@
             loop: true
         });
     });
-    document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    });
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     var swiper = new Swiper('.swiper-container', {
+    //         loop: false,
+    //         overflow: false,
 
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+    //         pagination: {
+    //             el: '.swiper-pagination',
+    //             clickable: true,
+    //         },
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //     });
+    // });
+
+
 </script>
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
